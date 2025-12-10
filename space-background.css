@@ -1,0 +1,202 @@
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: black;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle 5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+
+
+
+
+
+
+/* ------------------------------- */
+/*   MOBILE OPTIMIZATION (GLOBAL)  */
+/* ------------------------------- */
+
+@media (max-width: 768px) {
+
+  /* Navigation */
+  nav {
+    padding: 15px 25px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul.nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul.nav-links li a {
+    font-size: 18px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+
+  /* Home Section */
+  #Home {
+    padding: 120px 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .main-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .profile {
+    width: 220px;
+    height: 220px;
+  }
+
+  .text h1 {
+    font-size: 32px;
+  }
+
+  .text h2 {
+    font-size: 22px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+
+  /* Portfolio */
+  .section-title {
+    font-size: 50px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item {
+    height: 260px;
+  }
+
+  .view-more-btn {
+    width: 100%;
+  }
+
+
+  /* Payment Plans */
+  .payment-title {
+    font-size: 60px;
+  }
+
+  .plans-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .plan-card {
+    padding: 25px;
+  }
+
+  .plan-card h3 {
+    font-size: 28px;
+  }
+  
+  .price {
+    font-size: 36px;
+  }
+
+
+  /* Workflow */
+  #workflow {
+    padding: 80px 20px;
+  }
+
+  .workflow-title {
+    font-size: 55px;
+  }
+
+  .workflow-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .workflow-step {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .workflow-number {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+
+  /* Contact section */
+  #contact-me {
+    padding: 80px 20px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+
+  .contact-text {
+    font-size: 16px;
+  }
+
+  .discord-box {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+/* ------------------------------- */
+/*   VERY SMALL DEVICES (<480px)   */
+/* ------------------------------- */
+
+@media (max-width: 480px) {
+  .section-title,
+  .payment-title,
+  .workflow-title {
+    font-size: 42px;
+  }
+
+  .portfolio-item {
+    height: 200px;
+  }
+
+  .profile {
+    width: 180px;
+    height: 180px;
+  }
+
+  nav ul.nav-links li a {
+    font-size: 16px;
+  }
+}

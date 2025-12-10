@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Target Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="space-background.css">
+</head>
+<body>
+  <!-- Animated space background -->
+  <div class="stars"></div>
+  <div class="cursor"></div>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Target<span>Design</span></div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul class="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact-me">Contact</a></li>
+      <li><button class="contact-btn mobile-btn" onclick="window.open('https://discord.com/users/919430860686647296', '_blank')">Contact Me</button></li>
+    </ul>
+  </nav>
+
+
+  <!-- Home Section -->
+  <section id="Home">
+    <div class="main-container">
+      <div class="profile"></div>
+      <div class="text-container">
+        <div class="text">
+          <h1>Hello, It's <span>Target</span></h1>
+          <h2>I'm a <span>Graphics Designer</span></h2>
+          <p>I’m Target, an experienced GFX artist with 2 years of proven expertise creating standout designs for Roblox games, groups, and more. If you are looking for High Ctr Thumbnails I am the right person. </p>
+        </div>
+
+        <div class="buttons">
+          <div class="social-media">
+            <button onclick="window.open('https://discord.com/users/919430860686647296', '_blank')">Discord</button>
+          </div>
+
+          <div class="navigation">
+            <button onclick="document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })">Portfolio</button>
+            <button onclick="document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth' })">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2 class="section-title">My Portfolio</h2>
+
+    <div class="portfolio-grid">
+        <!-- First 6 items (always visible) -->
+        <div class="portfolio-item"><img src="public/images/work/1.png" alt=""></div>
+        <div class="portfolio-item"><img src="public/images/work/8.png" alt=""></div>
+        <div class="portfolio-item"><img src="public/images/work/7.png" alt=""></div>
+        <div class="portfolio-item"><img src="public/images/work/6.png" alt=""></div>
+        <div class="portfolio-item"><img src="public/images/work/5.png" alt=""></div>
+        <div class="portfolio-item"><img src="public/images/work/9.png" alt=""></div>
+
+        <!-- Hidden items (expand when button clicked) -->
+        <div class="portfolio-item hidden"><img src="public/images/work/2.png" alt=""></div>
+        <div class="portfolio-item hidden"><img src="public/images/work/3.png" alt=""></div>
+        <div class="portfolio-item hidden"><img src="public/images/work/4.png" alt=""></div>
+        <div class="portfolio-item hidden"><img src="public/images/work/10.png" alt=""></div>
+        <div class="portfolio-item hidden"><img src="public/images/work/11.png" alt=""></div>
+    </div>
+
+    <button id="view-more-btn" class="view-more-btn">View More</button>
+  </section>
+
+  <!-- Plans Section-->
+  <section id="payment-plans">
+    <h2 class="payment-title">Payment Plans</h2>
+
+    <div class="plans-container">
+
+        <div class="plan-card">
+            <h3>Thumbnail</h3>
+            <p class="price">$20</p>
+            <ul>
+                <li>High-Quality Thumbnail</li>
+                <li>3 Free Revisions</li>
+                <li>Fast Delivery</li>
+            </ul>
+            <button class="choose-plan" onclick="window.open('https://discord.com/users/919430860686647296', '_blank')">Choose Plan</button>
+        </div>
+
+        <div class="plan-card">
+            <h3>Icon</h3>
+            <p class="price">$15</p>
+            <ul>
+                <li>High-Quality Icon</li>
+                <li>3 Free Revisions</li>
+                <li>Clean & Professional</li>
+            </ul>
+            <button class="choose-plan" onclick="window.open('https://discord.com/users/919430860686647296', '_blank')">Choose Plan</button>
+        </div>
+
+    </div>
+  </section>
+
+  <section id="workflow">
+    <h2 class="workflow-title">How The Process Works</h2>
+
+    <div class="workflow-container">
+
+        <div class="workflow-step">
+            <span class="workflow-number">01</span>
+            <h3>Project Briefing</h3>
+            <p>A minimum of 30% upfront payment is required before any work begins. This deposit secures your slot and initiates the project. Bulk orders may qualify for adjusted payment structures—contact me to discuss.</p>
+        </div>
+
+        <div class="workflow-step">
+            <span class="workflow-number">02</span>
+            <h3>Terms & Initial Payment</h3>
+            <p>Once the project direction is confirmed, major style changes mid-project may incur extra fees. Switching to a completely different aesthetic after work has started will require additional effort and charges.</p>
+        </div>
+
+        <div class="workflow-step">
+            <span class="workflow-number">03</span>
+            <h3>Creation Phase</h3>
+            <p>All delivered work remains my intellectual property until full payment is received. You may not resell, redistribute, or claim designs as your own. Extended usage or licensing requires explicit written permission.</p>
+        </div>
+
+        <div class="workflow-step">
+            <span class="workflow-number">04</span>
+            <h3>Finalization & Delivery</h3>
+            <p>I reserve the right to decline commissions or revisions to maintain quality and creative alignment. If a project is cancelled, payment reflects work already completed. Respectful communication ensures a smooth process.</p>
+        </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+<section id="contact-me">
+    <h2 class="contact-title">Contact Me</h2>
+
+    <p class="contact-text">
+        If you're interested in working together or have any questions about my designs,
+        feel free to reach out. I’m always open to new projects, collaborations, and
+        creative ideas. The best and fastest way to contact me is through my Discord.
+    </p>
+
+    <div class="discord-box">
+        <h3>My Discord</h3>
+        <p class="discord-tag">target8938</p>
+    </div>
+</section>
+
+  <!-- JS to create stars dynamically -->
+  <script>
+    const starsContainer = document.querySelector('.stars');
+    const numStars = 300;
+
+    for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+
+        // random size
+        const size = Math.random() * 3 + 1;
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+
+        // random start position
+        const startX = Math.random() * window.innerWidth;
+        const startY = Math.random() * window.innerHeight;
+        star.style.left = startX + 'px';
+        star.style.top = startY + 'px';
+
+        // random drift distance
+        const driftX = (Math.random() * 40 - 20); // drift -20 to +20px
+        const driftY = (Math.random() * 40 - 20);
+
+        // random animation duration
+        const duration = Math.random() * 20 + 10; // 10s to 30s
+
+        // Apply CSS animation dynamically
+        star.animate(
+            [
+                { transform: 'translate(0px, 0px)' },
+                { transform: `translate(${driftX}px, ${driftY}px)` }
+            ],
+            {
+                duration: duration * 200,
+                direction: 'alternate',
+                iterations: Infinity,
+                easing: 'ease-in-out'
+            }
+        );
+
+        starsContainer.appendChild(star);
+    }
+
+
+    const btn = document.getElementById('view-more-btn');
+    const hiddenItems = document.querySelectorAll('.portfolio-item.hidden');
+    let expanded = false;
+
+    btn.addEventListener('click', () => {
+        if (!expanded) {
+            hiddenItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.display = "block";
+                    item.style.opacity = "1";
+                    item.style.transform = "translateY(0)";
+                }, index * 100); // stagger animation
+            });
+
+            btn.textContent = "Show Less";
+            expanded = true;
+        } else {
+            hiddenItems.forEach(item => {
+                item.style.display = "none";
+                item.style.opacity = "0";
+                item.style.transform = "translateY(20px)";
+            });
+
+            btn.textContent = "View More";
+            expanded = false;
+        }
+    });
+
+
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+    document.querySelector('.hamburger').classList.toggle('active');
+  }
+  </script>
+</body>
+</html>
